@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <div class="card-body">
+                
+                <input type="text" [disabled]="qp.includes('User')" #username [value]=editeduser.username class="form-control mb-1">
+                <input type="text" #userid [value]="editeduser.id" class="form-control">
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-primary" (click)="updateuser(username,userid)">updateuser</button>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+
+
+
+<div class="card">
+    <div class="card-body">
+         <input type="text"  [disabled]="qp.includes('user')"  #pname   [value]="proObj.pname" class="form-control">
+         <input type="text" #pid [value]="proObj.pid" class="form-control">
+         <input type="text" #pstatus [value]="proObj.pstatus" class="form-control">
+    </div>
+
+    <div>
+        <button class="btn-primary btn" (click)="updateuser(pname,pid,pstatus)"  >update</button>
+    </div>
+</div>

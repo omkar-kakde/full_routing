@@ -1,0 +1,44 @@
+
+
+ <div class="div">
+    <div class="col-md-3">
+        <ul class="list-group">
+            <li class="list-group-item" 
+            [queryParams]="{canEdit : user.userRole}"
+            [routerLink]="['/users', user.id]"
+            *ngFor="let user of usersData">
+                        {{user.username}}
+                       
+            </li>
+        </ul>
+        
+        <button class="btn btn-primary" routerLink="/products">go to product</button>
+    </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
